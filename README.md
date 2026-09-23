@@ -82,25 +82,27 @@ Compare the original modulating signal with the demodulated signal.
 * If any Error, correct it in code and execute again.
 * Verify the generated waveform using Tabulation and Model Waveform.
 
+# MODEL GRAPH
+<img width="503" height="350" alt="image" src="https://github.com/user-attachments/assets/939a5540-7b17-4dc2-8615-fcb78bf63c8c" />
+
 # TABULATION
 
-| Sl. No. | Signal             | Amplitude (V) Theory | Amplitude (V) Practical | Frequency (Hz) Theory | Frequency (Hz) Practical |
-| ------- | ------------------ | -------------------- | ----------------------- | --------------------- | ------------------------ |
-| 1       | Message Signal     |                      |                         |                       |                          |
-| 2       | Carrier Signal     |                      |                         |                       |                          |
-| 3       | Modulated Signal   |                      |                         |                       |                          |
-| 4       | Demodulated Signal |                      |                         |                       |                          |
+<img width="1600" height="1209" alt="image" src="https://github.com/user-attachments/assets/63ad375e-0184-4b45-b6f5-13a80c51bbc5" />
 
-**Modulated Signal:**
-
-* Emax =
-* Emin =
 
 # CALCULATION
 
-1. **ma (Theory) = am/ac =**
+<img width="1600" height="991" alt="image" src="https://github.com/user-attachments/assets/1d70b0a8-da0e-406e-8d02-ed4df98f9c0e" />
 
-2. **ma (Practical) = (Emax - Emin) / (Emax + Emin) =**
+
+# OUTPUT
+<img width="1146" height="629" alt="image" src="https://github.com/user-attachments/assets/96a6c069-b7c1-45d9-8abe-c9e241221129" />
+
+# RESULT
+
+Successfully generated and detected the amplitude modulation and demodulation using SCILAB and to calculate modulation index of AM.
+
+
 
 
 

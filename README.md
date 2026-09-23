@@ -72,6 +72,55 @@ Visualize the demodulated signal.
 
 Compare the original modulating signal with the demodulated signal.
 
+## CODE
+clc;
+clear;
+close;
+
+// Time
+t = 0:0.00001:0.01;
+
+// Message signal
+Am = 1;
+fm = 1000;
+m = Am*sin(2*%pi*fm*t);
+
+// Carrier signal
+Ac = 2;
+fc = 10000;
+c = Ac*cos(2*%pi*fc*t);
+
+// Modulation index
+mu = Am/Ac;
+
+// AM generation
+am = Ac*(1 + mu*sin(2*%pi*fm*t)) .* ...
+     cos(2*%pi*fc*t);
+
+// AM detection using envelope
+detected = abs(am);
+
+// Plot Message Signal
+subplot(3,1,1);
+plot(t,m);
+xlabel("Time (s)");
+ylabel("Amplitude");
+title("Message Signal");
+
+// Plot Carrier Signal
+subplot(3,1,2);
+plot(t,c);
+xlabel("Time (s)");
+ylabel("Amplitude");
+title("Carrier Signal");
+
+// Plot AM Signal
+subplot(3,1,3);
+plot(t,am);
+xlabel("Time (s)");
+ylabel("Amplitude");
+title("AM Signal");
+
 # PROCEDURE
 
 * Refer Algorithms and write code for the experiment.
